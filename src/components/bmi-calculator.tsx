@@ -122,12 +122,12 @@ export default function BmiCalculator() {
           {/* Button to calculate BMI */}
           <Button onClick={calculateBmi} className="border border-transparent hover:border-white rounded-2xl  bg-gradient-to-br from-green-600 via-yellow-400 to-gray-700  text-white font-bold">Calculate</Button>
           {/* Display error message if any */}
-          {error && <div className="text-red-500 text-center">{error}</div>}
+          {error && <div className="text-white text-center">{error}</div>}
           {/* Display BMI result if available */}
           {result && (
             <div className="grid gap-2">
-              <div className="text-center text-2xl font-bold">{result.bmi}</div>
-              <div className="text-center text-muted-foreground">
+              <div className="text-center text-2xl font-bold text-white">{result.bmi}</div>
+              <div className="text-center text-muted-foreground text-white">
                 {result.category}
               </div>
             </div>
